@@ -2,13 +2,9 @@ spring:
   application:
     name: Buoi_1
 
-  profiles:
-    active: dev
-
+server:
+  port: ${PORT:8080}
   servlet:
     multipart:
       max-file-size: 10MB
       max-request-size: 10MB
-
-server:
-  port: ${PORT:8080}
