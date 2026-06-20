@@ -53,7 +53,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                         .requestMatchers(HttpMethod.POST, PUBLIC_URLS).permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/vehicles/upload").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/vehicles", "/api/vehicles/**", "/uploads/**", "/api/rentals").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/vehicles", "/api/vehicles/**", "/uploads/**", "/api/rentals", "/api/stations").permitAll()
 
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")  
                         .anyRequest().authenticated());

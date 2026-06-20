@@ -11,3 +11,8 @@ spring:
 
 jwt:
   signerKey: "db62cda5db382209ecc3ff3440fb43146865601d28747e1da18d118a4d1b63c1"
+
+openchargemap:
+  api:
+    url: https://api.openchargemap.io/v3/poi/
+    key: 52113a7b-83bc-453c-9cd2-4648899816c7
